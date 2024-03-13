@@ -1,0 +1,25 @@
+{
+    "functions": {
+      "api/**/*.php": {
+        "runtime": "vercel-php@0.5.2"
+      }
+    },
+    "routes": [
+      { "src": "/",  "dest": "/api/index.php" },
+      { "src": "/(.*)", "dest": "/api/add_pic" },
+      { "src": "/(.*)", "dest": "/api/addcomp_info.php" },
+      { "src": "/(.*)", "dest": "/api/admin_login.php" } ,
+      { "src": "/(.*)", "dest": "/api/blog_info.php" },
+      { "src": "/(.*)", "dest": "/api/blog.php" },
+      { "src": "/(.*)", "dest": "/api/company_info.php" },
+      { "src": "/(.*)", "dest": "/api/delete_cp.php" },
+      { "src": "/(.*)", "dest": "/api/delete_g.php" },
+      { "src": "/(.*)", "dest": "/api/delete.php" },
+      { "src": "/(.*)", "dest": "/api/gallery.php" },
+      { "src": "/(.*)", "dest": "/api/register_admin.php" },
+      { "src": "/(.*)", "dest": "/api/update_cp.php" },
+      { "src": "/(.*)", "dest": "/api/update_g.php" },
+      { "src": "/(.*)", "dest": "/api/update.php" }
+
+    ]
+  }
